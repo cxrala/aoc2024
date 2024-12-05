@@ -1,0 +1,9 @@
+
+(while IFS='   ' read -A args; do
+  echo "${args[1]}"
+done < input.txt) > left.txt
+
+(while IFS='   ' read -A args; do
+  echo "${args[2]}"
+done < input.txt) > right.txt
+
